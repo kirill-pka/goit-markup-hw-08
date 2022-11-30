@@ -616,7 +616,11 @@ p {
 
 .advantages__list {
   width: 100%;
-  padding-top: 10px;
+}
+@media screen and (min-width: 768px) {
+  .advantages__list {
+    width: 354px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .advantages__list {
@@ -668,7 +672,12 @@ p {
 }
 
 .services {
-  padding-bottom: 94px;
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .services {
+    padding-bottom: 94px;
+  }
 }
 
 .services__title {
@@ -717,13 +726,24 @@ p {
 }
 
 .team__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.1666666667;
   letter-spacing: 0.03em;
   color: var(--main-color);
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .team__title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1666666667;
+    letter-spacing: 0.03em;
+    color: var(--main-color);
+    text-align: center;
+  }
 }
 
 .team-card {
@@ -732,16 +752,45 @@ p {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 30px;
+  row-gap: 30px;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .team-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+
+.team-avatar {
+  width: 450px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team-avatar {
+    width: 354px;
+  }
 }
 
 .team-card__item {
-  -ms-flex-preferred-size: calc((100% - 90px) / 4);
-      flex-basis: calc((100% - 90px) / 4);
   background-color: var(--White-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+@media screen and (min-width: 768px) {
+  .team-card__item {
+    display: inline-block;
+    background-color: var(--White-color);
+    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
 }
 
 .team-card__list {

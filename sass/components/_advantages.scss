@@ -20,8 +20,10 @@
 
 .advantages__list {
     width: 100%;
-    padding-top: 10px;
 
+    @media screen and (min-width: $tablet) {
+        width: 354px;
+    }
 
     @media screen and (min-width: $desktop) {
         width: 270px;

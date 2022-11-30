@@ -1,5 +1,10 @@
 .services {
-    padding-bottom: 94px;
+    display: none;
+
+
+    @media screen and (min-width: $desktop) {
+            padding-bottom: 94px;
+        }
    }
 
    .services__title {
