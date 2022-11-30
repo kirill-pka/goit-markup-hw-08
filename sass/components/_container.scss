@@ -1,0 +1,21 @@
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+
+// mobile screen
+@media screen and (min-width: $mobile) {
+    width: $mobile;  
+}
+
+// tablet screen
+@media screen and (min-width: $tablet) {
+    width: $tablet;  
+}
+
+// desktop screen
+    @media screen and (min-width: $desktop) {
+        width: $desktop;  
+    }
+
+    outline: 2px solid tomato;
+}
