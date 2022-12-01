@@ -4,34 +4,64 @@
 
     max-width: 1600px;
     margin: 0 auto;
-    background-color: var(--background-hero)
+    background-color: var(--background-hero);
+    
 }
 
 .footer__container {
-    display: flex;
-    align-items: baseline;
+    text-align: center;
+
+
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        align-items: baseline;
+    }
 }
+
+.footer__wrapp-menu {
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        align-items: baseline;
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .footer__wrapp-menu {
+        display: flex;
+        justify-content: center;
+        gap: 165px;
+    }
+  }
+
 
 .footer__section {
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
     letter-spacing: 0.03em;
+
 }
 
 .footer__logo {
     margin-bottom: 20px;
-    margin-right: 93px;
-    
+
     display: block;
-    
+
     font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
+
+    @media screen and (min-width: $desktop) {
+        text-align: initial;
+    }
+
 }
 
 .address-list {
+    margin-bottom: 60px;
+
     font-family: 'Roboto';
     font-style: normal;
     font-size: 14px;
@@ -39,6 +69,12 @@
     text-decoration: none;
 
     color: var(--White-color); 
+
+
+    @media screen and (min-width: $desktop) {
+        text-align: initial;
+    }
+
 }
 
 .address-list__address {
@@ -51,7 +87,12 @@
 }
 
 .address-list__contact:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+
+
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 9px;
+    }
 }
 
 .address-list__link-footer {
@@ -73,7 +114,11 @@
 }
 
 .footer-social {
-    margin-left: 70px;
+
+
+    @media screen and (min-width: $desktop) {
+        margin-left: 70px;
+    }
 }
 
 .footer-social__title {
@@ -85,12 +130,26 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--White-color);
+
+    @media screen and (min-width: $desktop) {
+        text-align: initial;
+    }
 }
 
 .footer-social__list {
+    margin-bottom: 60px;
+
     display: flex;
     gap: 10px;
+    justify-content: center;
+
+
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        gap: 10px;
+    }
 }
+
 
 .footer-social__icon {
     fill: var(--White-color);

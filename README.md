@@ -46,3 +46,7 @@ https://picsum.photos/
     padding-bottom: 94px;
 }
 @include
+
+
+<!-- Сайт через телефон по wifi -->
+ipconfig

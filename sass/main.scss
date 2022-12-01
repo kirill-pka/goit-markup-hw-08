@@ -1,9 +1,8 @@
 // utils style
-
-@import './utils/variables';
 @import './utils/v-hidden';
 @import './utils/placeholders';
 @import './utils/is-hidden.scss';
+@import './utils/variables';
 
 // layout
 @import './layout/header';
@@ -26,4 +25,5 @@
 @import './components/feature';
 @import './components/modal';
 @import './components/modal-form';
+@import './components/_mobile-menu';
 

@@ -8,6 +8,13 @@
     align-items: center;
 }
 
+.nav {
+    @media screen and (max-width: 767px) {
+        display: none;
+   }
+   
+}
+
 .header__nav {
     margin-right: auto;
 }
@@ -65,32 +72,73 @@
 
 .nav__item:not(:last-child) {
     margin-right: 50px;
+
+    // @media screen and (min-width: $tablet) {
+    //     width: 138px;
+    //     height: 14px;
+    //     justify-content: flex-start
+    // }
 }
 
-.header__contact{
-    display: inline-flex;
-    margin-left: auto;
+.header__contact {
+    display: none;
+
+    @media screen and (min-width: $tablet) {
+        display: block;
+    }
+
+    @media screen and (min-width: $desktop) {
+        display: inline-flex;
+        margin-left: auto; 
+    }
+
 }
 
-.header__item {
-    margin-right: 30px;
+.header__item:not(:last-child) {
+    // margin-right: 30px;
+
+
+    @media screen and (min-width: $desktop) {
+        margin-right: 30px;
+    }
 }
 
 .mail__contact,
 .tel__contact {
-    display: flex;
-    padding: 32px 0;
-    justify-content: center;
-    align-items: center;
     
+    @media screen and (min-width: $tablet) {
+        display: block;
 
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: calc(16 / 14);
-    letter-spacing: 0.02em;
-    color: var(--second-color);
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: calc(16 / 14);
+        letter-spacing: 0.02em;
+        color: var(--second-color);
+    }
+
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        padding: 32px 0;
+        justify-content: center;
+        align-items: center;
+        
+
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: calc(16 / 14);
+        letter-spacing: 0.02em;
+        color: var(--second-color);
+    }
+}
+
+.tel__contact {
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        margin-top: 10px;
+}
 }
 
 .icon_contact {

@@ -79,17 +79,12 @@
 //footer form
 
 .footer-social__btn {
-    margin-left: 12px;
-    padding: 10px 32px;
+    padding: 10px 30px;
     
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
     line-height: calc(30 / 16);
-    display: flex;
-    align-items: center;
-    text-align: center;
     letter-spacing: 0.06em;
     
     color: var(--White-color);
@@ -97,6 +92,43 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: 0;
+
+
+    @media screen and (min-width: $tablet) {
+        margin: auto;
+    
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+    
+        color: var(--White-color);
+        background: var(--change-color);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        border: 0;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-left: 12px;
+        padding: 10px 32px;
+
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: calc(30 / 16);
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+
+        color: var(--White-color);
+        background: var(--change-color);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        border: 0;
+    }
     
 }
 
@@ -174,6 +206,10 @@
     &:focus {
         fill: var(--change-color);
 } 
+}
+
+.mobile-close {
+    fill: var(--main-color);
 }
 
 
