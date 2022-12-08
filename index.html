@@ -160,12 +160,19 @@
           <ul class="services__list">
             <li>
               <div class="wrapper">
-                <img
-                  src="./images/box1.jpg"
-                  width="370"
-                  height="295"
-                  alt="Делает разметку"
-                />
+                  <img
+                    srcset="./images/services/img-1_lg@1x.webp 1x, images/services/img-1_lg@2x.webp 2x"
+                    type="image/webp"
+
+                    srcset="./images/services/img-1_lg@1x.jpg 1x, images/services/img-1_lg@2x.jpg 2x"
+                    type="image/jpg"
+
+                    src="./images/services/img-3_lg@1x.jpg"
+                    width="370"
+                    height="295"
+                    alt="Делает разметку"
+                    loading="lazy"
+                  />
                 <div class="wrapper__overlay-box">
                   <p class="wrapper__overlay-text">Десктопні додатки</p>
                 </div>
@@ -173,12 +180,19 @@
             </li>
             <li>
               <div class="wrapper">
-                <img
-                  src="./images/box2.jpg"
-                  width="370"
-                  height="295"
-                  alt="Оптимизирует мобильную версию"
-                />
+                  <img
+                    srcset="./images/services/img-2_lg@1x.webp 1x, images/services/img-2_lg@2x.webp 2x"
+                    type="image/webp"
+
+                    srcset="./images/services/img-2_lg@1x.jpg 1x, images/services/img-2_lg@2x.jpg 2x"
+                    type="image/jpg"
+                    
+                    src="./images/services/img-2_lg@1x.jpg"
+                    width="370"
+                    height="295"
+                    alt="Оптимизирует мобильную версию"
+                    loading="lazy"
+                  />
                 <div class="wrapper__overlay-box">
                   <p class="wrapper__overlay-text">Мобільні додатки</p>
                 </div>
@@ -186,12 +200,19 @@
             </li>
             <li>
               <div class="wrapper">
-                <img
-                  src="./images/box3.jpg"
-                  width="370"
-                  height="295"
-                  alt="Делает цветокоррекцию"
-                />
+                  <img
+                    srcset="./images/services/img-3_lg@1x.webp 1x, images/services/img-3_lg@2x.webp 2x"
+                    type="image/webp"
+
+                    srcset="./images/services/img-3_lg@1x.jpg 1x, images/services/img-3_lg@2x.jpg 2x"
+                    type="image/jpg"
+
+                    src="./images/services/img-3_lg@1x.jpg"
+                    width="370"
+                    height="295"
+                    alt="Делает цветокоррекцию"
+                    loading="lazy"
+                  />
                 <div class="wrapper__overlay-box">
                   <p class="wrapper__overlay-text">Дизайнерські рішення</p>
                 </div>
@@ -210,9 +231,32 @@
             <li class="team-card__item">
               <img
                 class="team-avatar"
-                src="./images/people1.jpg"
-                width="270"
-                height="260"
+
+                srcset="
+                  ./images/Team/img-1_270.webp 270w,
+                  ./images/Team/img-1_312.webp 312w,
+                  ./images/Team/img-1_354.webp 354w,
+                  ./images/Team/img-1_450.webp 450w,
+                  ./images/Team/img-1_454.webp 454w,
+                  ./images/Team/img-1_540.webp 540w
+                "
+                type="image/webp"
+                
+                srcset="
+                  ./images/Team/img-1_270.jpg 270w,
+                  ./images/Team/img-1_312.jpg 312w,
+                  ./images/Team/img-1_354.jpg 354w,
+                  ./images/Team/img-1_450.jpg 450w,
+                  ./images/Team/img-1_454.jpg 454w,
+                  ./images/Team/img-1_540.jpg 540w
+                "
+                type="image/jpg"
+
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px,
+                100vw"
+                src="./images/Team/img-1_450.jpg"
+                width="450"
+                height="460"
                 alt="Ігор Дем'яненко"
               />
               <div class="team-card__list">
@@ -279,9 +323,32 @@
             <li class="team-card__item">
               <img
                 class="team-avatar"
-                src="./images/people2.jpg"
-                width="270"
-                height="260"
+
+                srcset="
+                  ./images/Team/img-2_270.webp 270w,
+                  ./images/Team/img-2_354.webp 354w,
+                  ./images/Team/img-2_450.webp 450w,
+                  ./images/Team/img-2_540.webp 540w,
+                  ./images/Team/img-2_708.webp 708w,
+                  ./images/Team/img-2_900.webp 900w
+                "
+                type="image/webp"
+
+                srcset="
+                  ./images/Team/img-2_270.jpg 270w,
+                  ./images/Team/img-2_354.jpg 354w,
+                  ./images/Team/img-2_450.jpg 450w,
+                  ./images/Team/img-2_540.jpg 540w,
+                  ./images/Team/img-2_708.jpg 708w,
+                  ./images/Team/img-2_900.jpg 900w
+                "
+                type="image/jpg"
+                
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px,
+                100vw"
+                src="./images/Team/img-2_450.jpg"
+                width="450"
+                height="460"
                 alt="Ольга Рєпіна"
               />
               <div class="team-card__list">
@@ -348,9 +415,32 @@
             <li class="team-card__item">
               <img
                 class="team-avatar"
-                src="./images/people3.jpg"
-                width="270"
-                height="260"
+
+                srcset="
+                  ./images/Team/img-3_270.webp 270w,
+                  ./images/Team/img-3_354.webp 354w,
+                  ./images/Team/img-3_450.webp 450w,
+                  ./images/Team/img-3_540.webp 540w,
+                  ./images/Team/img-3_708.webp 708w,
+                  ./images/Team/img-3_900.webp 900w
+                "
+                type="image/webp"
+
+                srcset="
+                  ./images/Team/img-3_270.jpg 270w,
+                  ./images/Team/img-3_354.jpg 354w,
+                  ./images/Team/img-3_450.jpg 450w,
+                  ./images/Team/img-3_540.jpg 540w,
+                  ./images/Team/img-3_708.jpg 708w,
+                  ./images/Team/img-3_900.jpg 900w
+                "
+                type="image/jpg"
+
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px,
+                100vw"
+                src="./images/Team/img-3_540.jpg"
+                width="450"
+                height="460"
                 alt="Микола Тарасов"
               />
               <div class="team-card__list">
@@ -417,9 +507,32 @@
             <li class="team-card__item">
               <img
                 class="team-avatar"
-                src="./images/people4.jpg"
-                width="270"
-                height="260"
+                
+                srcset="
+                  ./images/Team/img-4_270.webp 270w,
+                  ./images/Team/img-4_354.webp 354w,
+                  ./images/Team/img-4_450.webp 450w,
+                  ./images/Team/img-4_540.webp 540w,
+                  ./images/Team/img-4_708.webp 708w,
+                  ./images/Team/img-4_900.webp 900w
+                "
+                type="image/webp"
+
+                srcset="
+                  ./images/Team/img-4_270.jpg 270w,
+                  ./images/Team/img-4_354.jpg 354w,
+                  ./images/Team/img-4_450.jpg 450w,
+                  ./images/Team/img-4_540.jpg 540w,
+                  ./images/Team/img-4_708.jpg 708w,
+                  ./images/Team/img-4_900.jpg 900w
+                "
+                type="image/jpg"
+
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px,
+                100vw"
+                src="./images/Team/img-4_540.jpg"
+                width="450"
+                height="460"
                 alt="Михайло Єрмаков"
               />
               <div class="team-card__list">
