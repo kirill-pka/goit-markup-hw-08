@@ -6,6 +6,15 @@
 .header__container {
     display: flex;
     align-items: center;
+    height: 60px;
+
+    
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        align-items: center;
+        height: 80px;
+    }
+
 }
 
 .nav {
@@ -13,10 +22,6 @@
         display: none;
    }
    
-}
-
-.header__nav {
-    margin-right: auto;
 }
 
 .nav__list {
@@ -79,6 +84,7 @@
     display: none;
 
     @media screen and (min-width: $tablet) {
+        margin-left: auto;
         display: block;
     }
 

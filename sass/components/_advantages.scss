@@ -18,6 +18,13 @@
     }
 }
 
+
+@media (max-width: 767px) {
+    .advantages__list:not(:last-child) {
+        margin-bottom: 30px;
+  }
+}
+
 .advantages__list {
     width: 100%;
 

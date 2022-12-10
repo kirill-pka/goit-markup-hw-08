@@ -58,16 +58,24 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 60px;
+}
+@media screen and (min-width: 768px) {
+  .header__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 80px;
+  }
 }
 
 @media screen and (max-width: 767px) {
   .nav {
     display: none;
   }
-}
-
-.header__nav {
-  margin-right: auto;
 }
 
 .nav__list {
@@ -121,6 +129,7 @@
 }
 @media screen and (min-width: 768px) {
   .header__contact {
+    margin-left: auto;
     display: block;
   }
 }
@@ -216,8 +225,14 @@
   }
 }
 
+@media screen and (min-width: 768px) {
+  .footer__wrapp-menu {
+    margin-bottom: 60px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer__wrapp-menu {
+    margin: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -239,10 +254,20 @@
   }
 }
 .footer__section {
+  margin-bottom: 60px;
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   letter-spacing: 0.03em;
+}
+@media screen and (min-width: 768px) {
+  .footer__section {
+    margin: 0;
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 0.03em;
+  }
 }
 
 .footer__logo {
@@ -260,7 +285,6 @@
 }
 
 .address-list {
-  margin-bottom: 60px;
   font-family: "Roboto";
   font-style: normal;
   font-size: 14px;
@@ -309,6 +333,14 @@
   color: rgba(255, 255, 255, 0.6);
 }
 
+.footer-social {
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .footer-social {
+    margin: 0;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer-social {
     margin-left: 70px;
@@ -331,7 +363,6 @@
 }
 
 .footer-social__list {
-  margin-bottom: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -434,13 +465,21 @@
 }
 
 .header__logo {
-  margin-right: 93px;
-  padding: 25px 0;
   font-family: "Raleway";
-  font-weight: 700;
   font-size: 26px;
   line-height: 1.1923076923;
   letter-spacing: 0.03em;
+}
+@media screen and (min-width: 768px) {
+  .header__logo {
+    margin-right: 93px;
+    padding: 25px 0;
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.1923076923;
+    letter-spacing: 0.03em;
+  }
 }
 
 .logo__main-part {
@@ -834,6 +873,11 @@ p {
   }
 }
 
+@media (max-width: 767px) {
+  .advantages__list:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
 .advantages__list {
   width: 100%;
 }
@@ -951,7 +995,7 @@ p {
 .team__title {
   margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.1666666667;
   letter-spacing: 0.03em;
   color: var(--main-color);
@@ -1098,7 +1142,7 @@ p {
 .clients__title {
   margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.1666666667;
   text-align: center;
   letter-spacing: 0.03em;
@@ -1143,12 +1187,14 @@ p {
   }
 }
 
-.clients__item {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: 170px;
-  height: 92px;
+@media screen and (min-width: 1200px) {
+  .clients__item {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 170px;
+    height: 92px;
+  }
 }
 
 .clients__icon {
@@ -1165,6 +1211,7 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 210px;
   color: var(--client);
   border: 1px solid var(--client);
   border-radius: 4px;
@@ -1174,6 +1221,11 @@ p {
 .clients__link:hover, .clients__link:focus {
   border-color: var(--change-color);
   color: #2196F3;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .clients__link {
+    width: 226px;
+  }
 }
 
 .feature-list {
@@ -1188,8 +1240,6 @@ p {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     gap: 30px;
-    -ms-flex-preferred-size: calc((100% - 60px) / 3);
-        flex-basis: calc((100% - 60px) / 3);
   }
 }
 
@@ -1242,11 +1292,6 @@ p {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--main-color);
-}
-@media screen and (min-width: 768px) {
-  .portfolio-title {
-    width: 304px;
-  }
 }
 @media screen and (min-width: 768px) {
   .portfolio-title {
@@ -1590,7 +1635,6 @@ p {
 }
 
 .menu-toggle {
-  min-height: 40px;
   min-width: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1646,9 +1690,12 @@ p {
 .mobile-menu .link {
   text-align: left;
   display: block;
-  padding: 10px;
   color: var(--main-color);
   text-decoration: none;
+}
+
+.mobile-menu-link:not(:last-child) {
+  margin-bottom: 35px;
 }
 
 .mobile-menu .mobie-current {
