@@ -1,0 +1,239 @@
+// Hero btn 
+
+.button-hero {
+    margin: auto;
+    padding: 10px 32px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    color: var(--White-color);
+    background: var(--change-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: 0;
+
+    transition: background-color var(--trns-anim);
+
+
+    &:hover,
+    &:focus {
+        color: var(--White-color);
+        background-color: var(--background-buttom);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+}
+
+
+// Портфолио btn
+
+.section-button {
+    @extend %section;
+
+
+}
+
+.button {
+    margin-bottom: 40px;
+
+    gap: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 15px;
+
+    @media screen and (min-width: $tablet) {
+        margin-bottom: 30px;
+        justify-content: center;
+    }
+
+
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 50px;
+        justify-content: center;
+
+        display: flex;
+        color: var(--corol-button);
+        background: transparent;
+        gap: 8px;
+        white-space: nowrap; 
+    }
+}
+
+.botton-type {
+    padding: 6px 22px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(26 / 16);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-color);
+    background-color: var(--corol-button);
+    border: none;
+    border-radius: 4px;
+
+    transition: color var(--trns-anim),
+                background-color var(--trns-anim);
+
+    &:hover,
+    &:focus {
+        color: var(--White-color);
+        background-color: var(--change-color);
+ 
+}
+}
+
+
+//footer form
+
+.footer-social__btn {
+    padding: 10px 30px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    line-height: calc(30 / 16);
+    letter-spacing: 0.06em;
+    
+    color: var(--White-color);
+    background: var(--change-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: 0;
+
+
+    @media screen and (min-width: $tablet) {
+        margin: auto;
+    
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+    
+        color: var(--White-color);
+        background: var(--change-color);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        border: 0;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-left: 12px;
+        padding: 10px 32px;
+
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: calc(30 / 16);
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+
+        color: var(--White-color);
+        background: var(--change-color);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        border: 0;
+    }
+    
+}
+
+
+// Modal
+
+.btn-form {
+    display: block;
+    margin: auto;
+
+    width: 200px;
+    height: 50px;
+    left: 700px;
+    top: 712px;
+    
+    background: var(--change-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    color: var(--White-color);
+
+
+
+ transition: background-color var(--trns-anim),
+             box-shadow var(--trns-anim);
+
+    &:hover,
+    &:focus {
+        color: var(--White-color);
+        background-color: var(--background-buttom);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    
+}
+}
+
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 30px;
+    height: 30px;
+    padding: 0;
+
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+
+    cursor: pointer;
+}
+
+.close-btn-icon {
+    width: 18px;
+    height: 18px;
+
+    transition: fill var(--trns-anim);
+
+    &:hover,
+    &:focus {
+        fill: var(--change-color);
+} 
+}
+
+.mobile-close {
+    fill: var(--main-color);
+
+    &:hover {
+        fill: var(--change-color);
+    }
+}
+
+
+
+
+
